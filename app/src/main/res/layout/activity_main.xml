@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/gradient_main_back_blue"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="-160dp"
+        android:layout_marginRight="-160dp"
+        app:srcCompat="@mipmap/topview" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monoton"
+        android:gravity="center_vertical"
+        android:paddingStart="28dp"
+        android:paddingLeft="28dp"
+        android:paddingTop="28dp"
+        android:text="Navigation Journal"
+        android:textColor="#fff"
+        android:textSize="42sp"
+        tools:ignore="RtlSymmetry" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="-16dp"
+            android:layout_marginLeft="-16dp"
+            android:backgroundTint="#a4000000"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:id="@+id/linearSearchMaker"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                tools:ignore="RtlSymmetry">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_search" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/comfortaa"
+                    android:includeFontPadding="false"
+                    android:padding="10dp"
+                    android:text="@string/identify_maker"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="-16dp"
+            android:layout_marginLeft="-16dp"
+            android:backgroundTint="#a4000000"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:id="@+id/linearHint"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                tools:ignore="RtlSymmetry">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_hint" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/comfortaa"
+                    android:includeFontPadding="false"
+                    android:padding="10dp"
+                    android:text="@string/hint"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="-16dp"
+            android:layout_marginLeft="-16dp"
+            android:backgroundTint="#a4000000"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:id="@+id/linearSearchCar"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                tools:ignore="RtlSymmetry">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_car" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/comfortaa"
+                    android:includeFontPadding="false"
+                    android:padding="10dp"
+                    android:text="@string/identify_car"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="-16dp"
+            android:layout_marginLeft="-16dp"
+            android:backgroundTint="#a4000000"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:id="@+id/linearAdvanceLevel"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                tools:ignore="RtlSymmetry">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_advance_level" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/comfortaa"
+                    android:includeFontPadding="false"
+                    android:padding="10dp"
+                    android:text="@string/advance_level"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/timeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:checked="false"
+        android:paddingBottom="16dp"
+        android:text="@string/timer_mode"
+        android:textSize="20sp"
+        app:switchPadding="10dp" />
+</RelativeLayout>

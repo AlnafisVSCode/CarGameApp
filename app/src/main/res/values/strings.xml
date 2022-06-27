@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CarQuiz</string>
+    <string name="advance_level">Advance Level</string>
+    <string name="car_nquiz">Car\nQuiz</string>
+    <string name="identify_maker">Identify Maker</string>
+    <string name="hint">Hint</string>
+    <string name="identify_car">Identify Car</string>
+    <string name="next">Next</string>
+    <string name="identify">Identify</string>
+    <string name="identify_car_maker">Identify Car Maker</string>
+    <string name="select_car_maker">Select Car Maker</string>
+    <string name="submit_with_count">Submit (%d)</string>
+    <string name="identify_car_maker_hint">Hint Mode</string>
+    <string name="enter_character">Enter Character</string>
+    <string name="enter_car_maker">Enter Car Maker</string>
+    <string name="timer_mode">Timer Mode</string>
+</resources>
